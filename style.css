@@ -1,0 +1,73 @@
+/* General resets and page setup */
+body {
+  font-family: Arial, sans-serif; /* Clean font face to match the layout image style */
+  margin: 0;
+  padding: 0;
+  background-color: #ffffff;
+}
+
+/* Header Text elements */
+h1 {
+  text-align: center;
+  font-size: 2.2rem;
+  color: #333333;
+  margin-top: 30px;
+}
+
+mark {
+  color: brown;
+  background-color: transparent; /* Seamless blend behind highlighted words */
+}
+
+/* Banner framework styling */
+.banner img {
+  width: 80%;
+  height: 200px;
+  display: block;
+  object-fit: cover; /* Fills frame space smoothly without image distorting */
+  margin: 20px auto 0 auto; /* Completely centered automatically */
+}
+
+/* Three column CSS Grid arrangement */
+.paragraphs {
+  display: grid;
+  grid-template-columns: 1fr 1.3fr 1fr; /* Fixed original fraction syntax error */
+  gap: 24px;
+  align-items: start;
+  max-width: 1200px;
+  margin: 40px auto; /* Centers the whole container layout on display screens */
+  padding: 0 20px;
+}
+
+/* Column headers styling elements */
+.col h2, 
+
+.col h3 {
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: #666666; /* Standard sleek gray tone matching mock image */
+  margin-bottom: 15px;
+  margin-top: 0;
+}
+
+/* Individual paragraph layout values */
+.col p {
+  font-size: 0.95rem;
+  color: #777777; /* Restored visibility from near-white to crisp mid-gray */
+  line-height: 1.5;
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+/* The dark sidebar design properties */
+.col.sidebar {
+  background-color: #322519; /* Rich dark brown wrapper layout matching target image */
+  padding: 24px 20px;
+  box-sizing: border-box;
+}
+
+/* Paragraph text alignment rule exclusively inside the dark box wrapper */
+.col.sidebar p {
+  color: #ebdcd0; /* Light text for readability over dark background box */
+  margin-bottom: 0;
+}
